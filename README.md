@@ -13,7 +13,7 @@
 1. We manage environments with Conda. To set up the environment, follow these steps:
 ```
 git clone https://github.com/xxx
-cd sd
+cd Debias
 conda env create -f environment.yml
 conda activate debias
 ```
