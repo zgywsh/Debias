@@ -59,6 +59,7 @@ python gen-images.py \
 ## Evaluation
 
 You can execute the following command to evaluate the generated data. Please run the script in `eval/`.
+
 Change the file directory in the code according to the picture location.
 
 ```shell
