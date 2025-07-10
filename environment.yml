@@ -1,4 +1,4 @@
-name: fair-diffusion
+name: debias
 channels:
   - nvidia
   - conda-forge
