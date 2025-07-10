@@ -24,14 +24,14 @@ def compute_bias(b):
         keys = list(freq.keys())
         if K == 1:
             bias_ += 1
-            print("1")
+            # print("1")
             continue
         for i in range(K):
             for j in range(i + 1, K):
                 freq_diff_sum += abs(freq[keys[i]] - freq[keys[j]])
 
         bias_P = freq_diff_sum / (K * (K - 1) / 2) / len(race)
-        print(bias_P)
+        # print(bias_P)
 
         bias_ += bias_P
     print(bias_ / len(results[b]))
@@ -99,7 +99,7 @@ def compute_bias_m(b, c):
                 freq_diff_sum += abs(freq[keys[i]] - freq[keys[j]])
 
         bias_P = freq_diff_sum / (K * (K - 1) / 2) / len(race)
-        print(bias_P)
+        # print(bias_P)
 
         bias_ += bias_P
 
@@ -113,8 +113,8 @@ if __name__ == "__main__":
     ) as f:
         results = pkl.load(f)
 
-    # compute_bias(2)
-    # compute_bias(3)
+    compute_bias(2)
+    compute_bias(3)
     compute_bias_m(2, 3)
 
     # compute_Diversity(3)
