@@ -63,7 +63,9 @@ You can execute the following command to evaluate the generated data. Please run
 Change the file directory in the code according to the picture location.
 
 ```shell
+#1. To get "results.pkl"
 python test.py
+#2. cpmpute bias with "results.pkl"
 python compute.py
 ```
 
